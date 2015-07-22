@@ -30,7 +30,7 @@
     "gulp-util": "^3.0.6",
     "kouto-swiss": "^0.10.3",
     "minimist": "0.0.9",
-    "rsyncwrapper": "^0.4.3",
+    "rsyncwrapper": "^0.4.3"
   },
   "repository": {
     "type": "git",
