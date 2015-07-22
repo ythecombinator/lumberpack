@@ -1,0 +1,27 @@
+{
+  "name": "lumberpack",
+  "version": "0.0.1",
+  "description": "A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabrasil/lumberpack.git"
+  },
+  "keywords": [
+    "Boilerplate",
+    "Gulp",
+    "Jade",
+    "Stylus",
+    "Livescript",
+    "Skeleton"
+  ],
+  "author": "Matheus Brasil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mabrasil/lumberpack/issues"
+  },
+  "homepage": "https://github.com/mabrasil/lumberpack#readme"
+}
