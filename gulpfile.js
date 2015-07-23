@@ -50,7 +50,7 @@ gulp.task('browserify', function(){
 
 // Call Stylus
 gulp.task('stylus', function(){
-    gulp.src('src/styl/main.styl')
+    gulp.src('src/styles/main.styl')
     .pipe(plumber())
     .pipe(stylus({
       use:[koutoSwiss(), prefixer(), jeet(),rupture()],
@@ -61,7 +61,7 @@ gulp.task('stylus', function(){
 
 // Call Imagemin
 gulp.task('imagemin', function() {
-  return gulp.src('src/img/**/*')
+  return gulp.src('src/images/**/*')
     .pipe(plumber())
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
     .pipe(gulp.dest('build/img'));
@@ -70,17 +70,17 @@ gulp.task('imagemin', function() {
 // Call Watch
 gulp.task('watch', function(){
   gulp.watch('src/templates/**/*.jade', ['jade']);
-  gulp.watch('src/styl/**/*.styl', ['stylus']);
+  gulp.watch('src/styles/**/*.styl', ['stylus']);
   gulp.watch('src/js/**/*.js', ['js']);
-  gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
+  gulp.watch('src/images/**/*.{jpg,png,gif}', ['imagemin']);
 });
 
 // Call Watch for Browserify
 gulp.task('watchfy', function(){
   gulp.watch('src/templates/**/*.jade', ['jade']);
-  gulp.watch('src/styl/**/*.styl', ['stylus']);
+  gulp.watch('src/styles/**/*.styl', ['stylus']);
   gulp.watch('src/js/**/*.js', ['browserify']);
-  gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
+  gulp.watch('src/images/**/*.{jpg,png,gif}', ['imagemin']);
 });
 
 gulp.task('browser-sync', function () {
