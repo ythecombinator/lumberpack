@@ -34,3 +34,9 @@ Personally, I do think that one of the points considered as favorable to Stylus 
 development.
 
 ### Gulp
+
+## Credits
+
+- Some Gulp tasks taken from [Willian Justen](https://github.com/willianjusten)'s [Fast Boilerplate](https://github.com/willianjusten/Fast)
+
+- All styles taken from [Dave Gamache](https://github.com/dhg)'s [Skeleton](https://github.com/dhg/Skeleton)
