@@ -13,6 +13,7 @@ var env         = require('minimist')(process.argv.slice(2)),
   concat      = require('gulp-concat'),
   gulpif      = require('gulp-if'),
   stylus      = require('gulp-stylus'),
+  stylint     = require('gulp-stylint'),
   jeet        = require('jeet'),
   rupture     = require('rupture'),
   koutoSwiss  = require('kouto-swiss'),
@@ -59,6 +60,12 @@ gulp.task('stylus', function(){
     .pipe(gulp.dest('build/css'))
 });
 
+// Call Stylus Linter
+gulp.task('stylint', function () {
+  gulp.src('src/styles/**/*.styl')
+  .pipe(stylint({config: '.stylintrc'}))
+});
+
 // Call Imagemin
 gulp.task('imagemin', function() {
   return gulp.src('src/images/**/*')
@@ -70,7 +77,7 @@ gulp.task('imagemin', function() {
 // Call Watch
 gulp.task('watch', function(){
   gulp.watch('src/templates/**/*.jade', ['jade']);
-  gulp.watch('src/styles/**/*.styl', ['stylus']);
+  gulp.watch('src/styles/**/*.styl', ['stylint', 'stylus']);
   gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('src/images/**/*.{jpg,png,gif}', ['imagemin']);
 });
@@ -78,7 +85,7 @@ gulp.task('watch', function(){
 // Call Watch for Browserify
 gulp.task('watchfy', function(){
   gulp.watch('src/templates/**/*.jade', ['jade']);
-  gulp.watch('src/styles/**/*.styl', ['stylus']);
+  gulp.watch('src/styles/**/*.styl', ['stylint', 'stylus']);
   gulp.watch('src/js/**/*.js', ['browserify']);
   gulp.watch('src/images/**/*.{jpg,png,gif}', ['imagemin']);
 });
@@ -114,13 +121,13 @@ gulp.task('deploy', function(){
 });
 
 // Default task
-gulp.task('default', ['js', 'jade', 'stylus', 'imagemin', 'watch', 'browser-sync']);
+gulp.task('default', ['js', 'jade', 'stylint', 'stylus', 'imagemin', 'watch', 'browser-sync']);
 
 // Default task using browserify
-gulp.task('fy', ['browserify', 'jade', 'stylus', 'imagemin', 'watchfy', 'browser-sync']);
+gulp.task('fy', ['browserify', 'jade', 'stylint', 'stylus', 'imagemin', 'watchfy', 'browser-sync']);
 
 // Build and Deploy
-gulp.task('build', ['js', 'jade', 'stylus', 'imagemin', 'deploy']);
+gulp.task('build', ['js', 'jade', 'stylint', 'stylus', 'imagemin', 'deploy']);
 
 // Build and Deploy
-gulp.task('buildfy', ['browserify', 'jade', 'stylus', 'imagemin', 'deploy']);
+gulp.task('buildfy', ['browserify', 'jade', 'stylint', 'stylus', 'imagemin', 'deploy']);
