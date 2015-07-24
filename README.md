@@ -1,11 +1,12 @@
 [ ![Codeship Status for mabrasil/lumberpack](https://codeship.com/projects/e5c0fd40-146c-0133-f7df-26b4121038d9/status?branch=master)](https://codeship.com/projects/93079)
 [![Build Status](https://travis-ci.org/mabrasil/lumberpack.svg?branch=master)](https://travis-ci.org/mabrasil/lumberpack)
+[![Code Climate](https://codeclimate.com/github/mabrasil/lumberpack/badges/gpa.svg)](https://codeclimate.com/github/mabrasil/lumberpack)
 [![Dependency Status](https://david-dm.org/mabrasil/lumberpack.png)](https://david-dm.org/mabrasil/lumberpack)
 [![devDependency Status](https://david-dm.org/mabrasil/lumberpack/dev-status.svg)](https://david-dm.org/mabrasil/lumberpack#info=devDependencies)
 
 # The 21st Century's Lumberjack's Boilerplate
 
-<img alt="The tooling kit for modern lumbers" src="src/images/logo.png">
+[![The tooling kit for modern lumbers](src/images/logo.png)]
 
 > A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.
 
