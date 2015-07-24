@@ -113,9 +113,11 @@ my_project -
     gulpfile.js
     package.json
   /tasks -
-    /...
+    / <Your Gulp Tasks>
 ```
 #### Understand the Gulp Tasks
+
+All the Gulp tasks are in the [`tasks/`](/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
 
 - `gulp`: Initialize watch for changes and a server
 - `gulp ls`: Compile Livescript files
