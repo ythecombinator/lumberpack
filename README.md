@@ -4,6 +4,14 @@
 
 > A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.
 
+##Table of Contents
+
+- [What's inside?](#whats-inside)
+- [Using](#using)
+- [Contributing](#contributing)
+- [License](#license)
+- [Credits](#credits)
+
 ## What's inside?
 
 Well, a modern lumberjack has many modern needings and it is only fair that (s)he uses some of the coolest
