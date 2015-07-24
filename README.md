@@ -1,6 +1,6 @@
 # The 21st Century's Lumberjack's Boilerplate
 
-![The tooling for modern lumbers.](http://i.imgur.com/gS3KlP8.png)
+<img alt="The tooling kit for modern lumbers" src="http://i.imgur.com/gS3KlP8.png" width="400">
 
 > A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.
 
@@ -34,6 +34,15 @@ Personally, I do think that one of the points considered as favorable to Stylus 
 development.
 
 ### Gulp
+
+*Stream-based build system*, *code over configuration*, *idiomatic Node modules*, a *simple and elegant API*...
+There are many reasons why [Gulp](http://gulpjs.com/) can be a good bet on task runners.
+
+Here we have many cool plugins like `Browser Sync` - which allows you to sync all your devices and even make
+livereloading -, `Jade`, `Stylus`, `Uglify`, `Concat`, `Imagemin` and many other good ones.
+
+In this project, we also prevent your `gulpfile.js` from growing too large by splitting it into multiple files,
+with one task per file. You can check out the [tasks directory](/tasks) to see how it works.
 
 ## Credits
 
