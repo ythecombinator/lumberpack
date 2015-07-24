@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mabrasil/lumberpack.svg?branch=master)](https://travis-ci.org/mabrasil/lumberpack)
+
 # The 21st Century's Lumberjack's Boilerplate
 
 <img alt="The tooling kit for modern lumbers" src="src/images/logo.png">
