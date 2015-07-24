@@ -1,6 +1,6 @@
 # The 21st Century's Lumberjack's Boilerplate
 
-<img alt="The tooling kit for modern lumbers" src="http://i.imgur.com/gS3KlP8.png" width="400">
+<img alt="The tooling kit for modern lumbers" src="src/images/logo.png">
 
 > A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.
 
@@ -21,8 +21,8 @@ The  [Jade Engine](http://jade-lang.com/)  is one of the most powerful template 
 
 ### Stylus
 
-[Stylus](https://learnboost.github.io/stylus/) ...
-
+[Stylus](https://learnboost.github.io/stylus/) has everything that modern *CSS preprocessors* should have: *variables*,
+*mixins*, *nesting*, *extending* and many other cool things. And it's writen in Javascript and runs in *NodeJS*.
 
 #### Stylint
 
@@ -32,6 +32,8 @@ Personally, I do think that one of the points considered as favorable to Stylus 
 
 [Skeleton](http://getskeleton.com/) which is an amazingly simple and responsive boilerplate for Mobile-Friendly
 development.
+
+All styles used here were taken from *Skeleton*'s original styles and ported to *Stylus*.
 
 ### Gulp
 
@@ -44,8 +46,16 @@ livereloading -, `Jade`, `Stylus`, `Uglify`, `Concat`, `Imagemin` and many other
 In this project, we also prevent your `gulpfile.js` from growing too large by splitting it into multiple files,
 with one task per file. You can check out the [tasks directory](/tasks) to see how it works.
 
+## Using
+
+### Getting Started
+
+
+
 ## Credits
 
-- Some Gulp tasks taken from [Willian Justen](https://github.com/willianjusten)'s [Fast Boilerplate](https://github.com/willianjusten/Fast)
+- Part of this project's original structure - some tasks, directories organization etc. - was tasks taken
+from [Willian Justen](https://github.com/willianjusten)'s [Fast Boilerplate](https://github.com/willianjusten/Fast) -
+maybe now the projects look very different.
 
-- All styles taken from [Dave Gamache](https://github.com/dhg)'s [Skeleton](https://github.com/dhg/Skeleton)
+- All styles were taken from [Dave Gamache](https://github.com/dhg)'s [Skeleton](https://github.com/dhg/Skeleton)
