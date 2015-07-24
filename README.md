@@ -6,7 +6,7 @@
 
 # The 21st Century's Lumberjack's Boilerplate
 
-[![The tooling kit for modern lumbers](src/images/logo.png)]
+![The tooling kit for modern lumbers](src/images/logo.png)
 
 > A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.
 
