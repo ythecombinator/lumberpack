@@ -10,7 +10,7 @@ var env        = require('minimist')(process.argv.slice(2))
 // Call Uglify and Concat JS
 module.exports = function (gulp) {
   return function () {
-    gulp.src('src/js/**/*.js')
+    gulp.src('src/scripts/**/*.js')
       .pipe(plumber())
       .pipe(concat('main.js'))
       .pipe(gulpif(env.p, uglify()))
