@@ -13,6 +13,6 @@ module.exports = function (gulp) {
       .pipe(stylus({
         compress: env.p
       }))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('www/css'))
   };
 };

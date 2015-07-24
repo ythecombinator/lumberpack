@@ -1,6 +1,6 @@
 ### Folders ###
 node_modules
-build
+www
 
 ### Files ###
 **/npm-debug.log

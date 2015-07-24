@@ -9,7 +9,7 @@ module.exports = function (gulp) {
   return function () {
     rsync({
       ssh: true,
-      src: './build/',
+      src: './www/',
       dest: 'user@hostname:/path/to/www',
       recursive: true,
       syncDest: true,

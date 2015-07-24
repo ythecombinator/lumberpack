@@ -12,6 +12,6 @@ module.exports = function (gulp) {
   gulp.src('src/templates/*.jade')
     .pipe(plumber())
     .pipe(jade({pretty: !env.p }))
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('www/'))
   };
 };

@@ -10,6 +10,6 @@ module.exports = function (gulp) {
   gulp.src('src/images/**/*')
     .pipe(plumber())
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('www/img'));
   };
 };

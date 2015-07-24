@@ -15,6 +15,6 @@ module.exports = function (gulp) {
     gulp.src('src/scripts/**/*.ls')
       .pipe(gulpLiveScript({bare: true})
       .on('error', gutil.log))
-      .pipe(gulp.dest('build/js'));
+      .pipe(gulp.dest('www/js'));
   };
 };

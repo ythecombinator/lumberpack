@@ -97,7 +97,7 @@ If everything from the [Getting Started](#getting-started) section goes well, yo
 
 ```sh
 my_project -
-  /build -
+  /www -
     /css
       main.css
     /img
