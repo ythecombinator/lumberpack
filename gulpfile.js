@@ -9,7 +9,7 @@ gulp.task('browser-sync', getTask('browser-sync'));
 gulp.task('deploy', getTask('deploy'));
 gulp.task('imagemin', getTask('imagemin'));
 gulp.task('jade', getTask('jade'));
-gulp.task('js', getTask('js'));
+gulp.task('ls', getTask('ls'));
 gulp.task('stylint', getTask('stylint'));
 gulp.task('stylus', getTask('stylus'));
 
@@ -17,7 +17,7 @@ gulp.task('stylus', getTask('stylus'));
 gulp.task('watch', getTask('watch'));
 
 // Default task
-gulp.task('default', ['js', 'jade', 'stylint', 'stylus', 'imagemin', 'watch', 'browser-sync']);
+gulp.task('default', ['ls', 'jade', 'stylint', 'stylus', 'imagemin', 'watch', 'browser-sync']);
 
 // Build and Deploy
-gulp.task('build', ['js', 'jade', 'stylint', 'stylus', 'imagemin', 'deploy']);
+gulp.task('build', ['ls', 'jade', 'stylint', 'stylus', 'imagemin', 'deploy']);
