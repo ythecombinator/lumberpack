@@ -3,13 +3,14 @@
 // Necessary Plugins
 var gulp   = require('gulp')
     ,gutil = require('gulp-util')
+    ,paths = require('../paths')
     ,rsync = require('rsyncwrapper').rsync
 
 // Deploy via Rsync
 module.exports = gulp.task('deploy', function () {
     rsync({
       ssh: true,
-      src: './www/',
+      src: paths.build.html,
       dest: 'user@hostname:/path/to/www',
       recursive: true,
       syncDest: true,
