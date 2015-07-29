@@ -128,6 +128,32 @@ All the Gulp tasks are in the [`tasks/`](/tasks) folder. Each one consists of a 
 - `gulp -p`: Minify all files for production
 - `gulp build -p`: Minify files and deploy via rsync
 
+#### Setup the project's basic info
+
+Some of basic info from your site will be rendered from a [`config.json`](/src/config.json) file. This is done to make it easier
+to change some general data - like the site *name* or *descrption*. The `config.json` initial structure is:
+
+```json
+{
+  "name": "Lumberpack",
+  "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+  "image": "img/logo.png",
+  "favicon": "img/favicon.png",
+  "url": "https://github.com/mabrasil/lumberpack",
+  "facebookType": "article",
+  "twitterType": "summary_large_image"
+}
+```
+
+- `name`: Indicates the *name* that will be used in the following *metatags*: `title`, `og:title`, `og:site_name` and `twitter:title`.
+- `description`: Indicates the *description* that will be used in the following *metatags*: `description`, `og:description`, and `twitter:description`.
+- `image`: Indicates the *image* that will be used in the following *metatags*: `og:image` and `twitter:image:src`.
+- `favicon`: Indicates the *image* that will be used as your *favicon*.
+- `url`: Indicates the *url* that will be used in the following *metatags*: `og:url` and `twitter:url`.
+- `facebookType`: Indicates what will be used in the `og:type` *metatag*. You can check more info about it [here](http://ogp.me/#types).
+- `twitterType`: Indicates what will be used in the `twitter:card` *metatag*. You can check more info about it [here](https://dev.twitter.com/cards/types).
+
+
 ## Contributing
 
 ### Versioning
