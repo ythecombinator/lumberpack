@@ -3,11 +3,12 @@
 module.exports = {
 
     source: {
-        jade: 'src/templates/*.jade',
+        jade: 'src/templates/**/*.jade',
         ls: 'src/scripts/**/*.ls',
         styl: 'src/styles/**/*.styl',
         img: 'src/images/**/*.{jpg,png,gif}',
         files: {
+            jade: 'src/templates/*.jade',
             styl: 'src/styles/main.styl'
         }
 
