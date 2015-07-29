@@ -8,6 +8,7 @@ module.exports = {
         styl: 'src/styles/**/*.styl',
         img: 'src/images/**/*.{jpg,png,gif}',
         files: {
+            config: './src/config.json',
             jade: 'src/templates/*.jade',
             styl: 'src/styles/main.styl'
         }
