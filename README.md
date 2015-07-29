@@ -58,7 +58,7 @@ Here we have many cool plugins like `Browser Sync` - which allows you to sync al
 livereloading -, `Jade`, `Stylus`, `Imagemin` and many other good ones.
 
 In this project, we also prevent your `gulpfile.js` from growing too large by splitting it into multiple files,
-with one task per file. You can check out the [tasks directory](/tasks) to see how it works.
+with one task per file. You can check out the [tasks directory](gulp/tasks) to see how it works.
 
 ## Using
 
@@ -118,7 +118,7 @@ If everything from the [Getting Started](#getting-started) section goes well, yo
 
 #### Understand the Gulp Tasks
 
-All the Gulp tasks are in the [`tasks/`](/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
+All the Gulp tasks are in the [`tasks/`](gulp/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
 
 - `gulp`: Initialize watch for changes and a server
 - `gulp ls`: Compile Livescript files
