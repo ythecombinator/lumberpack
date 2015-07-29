@@ -9,6 +9,7 @@
   "dependencies": {
     "gulp": "3.9.0",
     "gulp-concat": "2.6.0",
+    "gulp-data": "^1.2.0",
     "gulp-if": "1.2.5",
     "gulp-jade": "1.0.1",
     "gulp-livescript": "^2.4.0",
