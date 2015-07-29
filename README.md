@@ -95,26 +95,27 @@ $ gulp
 
 If everything from the [Getting Started](#getting-started) section goes well, you should have this:
 
-```sh
-my_project -
-  /www -
-    /css
-      main.css
-    /img
-    /js
-      main.js
-    .index.html
-  /src -
-    /images
-    /scripts
-    /styles
-    /templates
-    .editorconfig
-    gulpfile.js
-    package.json
-  /tasks -
-    / <Your Gulp Tasks>
 ```
+|-- gulp/
+|-- src/
+|   |-- images/
+|   |-- scripts/
+|   |-- styles/
+|   |-- templates/
+|   |-- config.json
+|-- www/
+|   |-- css/
+|       |-- main.css
+|   |-- img/
+|   |-- js/
+|       |-- main.js
+|   |-- index.html
+|-- .editorconfig
+|-- .stylintrc
+|-- gulpfile.js
+|-- package.json
+```
+
 #### Understand the Gulp Tasks
 
 All the Gulp tasks are in the [`tasks/`](/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
@@ -135,6 +136,30 @@ to change some general data - like the site *name* or *descrption*. The `config.
 
 ```json
 {
+  "name": "",
+  "description": "",
+  "image": "",
+  "favicon": "",
+  "url": "",
+  "facebookType": "",
+  "twitterType": ""
+}
+```
+
+These are the data given by `config.json`:
+
+- `name`: Indicates the *name* that will be used in the following *metatags*: `title`, `og:title`, `og:site_name` and `twitter:title`.
+- `description`: Indicates the *description* that will be used in the following *metatags*: `description`, `og:description`, and `twitter:description`.
+- `image`: Indicates the **URL** of the *image* that will be used in the following *metatags*: `og:image` and `twitter:image:src`.
+- `favicon`: Indicates the **URL** of the *image* that will be used as your *favicon*.
+- `url`: Indicates the *url* that will be used in the following *metatags*: `og:url` and `twitter:url`.
+- `facebookType`: Indicates what will be used in the `og:type` *metatag*. You can check more info about it [here](http://ogp.me/#types).
+- `twitterType`: Indicates what will be used in the `twitter:card` *metatag*. You can check more info about it [here](https://dev.twitter.com/cards/types).
+
+For example:
+
+```json
+{
   "name": "Lumberpack",
   "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
   "image": "img/logo.png",
@@ -144,15 +169,6 @@ to change some general data - like the site *name* or *descrption*. The `config.
   "twitterType": "summary_large_image"
 }
 ```
-
-- `name`: Indicates the *name* that will be used in the following *metatags*: `title`, `og:title`, `og:site_name` and `twitter:title`.
-- `description`: Indicates the *description* that will be used in the following *metatags*: `description`, `og:description`, and `twitter:description`.
-- `image`: Indicates the *image* that will be used in the following *metatags*: `og:image` and `twitter:image:src`.
-- `favicon`: Indicates the *image* that will be used as your *favicon*.
-- `url`: Indicates the *url* that will be used in the following *metatags*: `og:url` and `twitter:url`.
-- `facebookType`: Indicates what will be used in the `og:type` *metatag*. You can check more info about it [here](http://ogp.me/#types).
-- `twitterType`: Indicates what will be used in the `twitter:card` *metatag*. You can check more info about it [here](https://dev.twitter.com/cards/types).
-
 
 ## Contributing
 
