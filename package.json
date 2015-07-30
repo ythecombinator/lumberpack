@@ -1,6 +1,6 @@
 {
   "name": "lumberpack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
   "main": "gulpfile.js",
   "scripts": {
