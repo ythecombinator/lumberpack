@@ -1,9 +1,32 @@
 {
-  "name": "Lumberpack",
-  "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
-  "image": "img/logo.png",
-  "favicon": "img/favicon.png",
-  "url": "https://github.com/mabrasil/lumberpack",
-  "facebookType": "article",
-  "twitterType": "summary_large_image"
+   "about":{
+      "name": "Lumberpack",
+      "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+      "image": "img/logo.png",
+      "favicon": "img/favicon.png",
+      "logo": "http://devevents.github.io/conf-app-boilerplate/static/img/about/logo.png"
+   },
+   "social":{
+      "facebook":{
+        "admins":"",
+        "url": "https://github.com/mabrasil/lumberpack",
+        "type": "website",
+        "name": "Lumberpack",
+        "title": "Lumberpack",
+        "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+        "image": "img/logo.png"
+      },
+      "twitter":{
+         "card": "summary_large_image",
+         "site": "@mabrasil_io",
+         "title": "Lumberpack",
+         "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+         "image": "img/logo.png"
+      },
+      "plus":{
+         "name": "Lumberpack",
+         "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+         "image": "img/logo.png"
+      }
+   }
 }
