@@ -3,8 +3,7 @@
       "name": "Lumberpack",
       "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
       "image": "img/logo.png",
-      "favicon": "img/favicon.png",
-      "logo": "http://devevents.github.io/conf-app-boilerplate/static/img/about/logo.png"
+      "favicon": "img/favicon.png"
    },
    "social":{
       "facebook":{
