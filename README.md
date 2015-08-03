@@ -177,19 +177,25 @@ These are the data given by `config.json`:
 - `name`:
 
   **Type**: `string`
+
   **Default**: `""`
+
   **Equivalent**: `<title></title>`
 
 - `description`:
 
   **Type**: `string`
+
   **Default**: `""`
+
   **Equivalent**: `<meta name="description" content="">`
 
 - `favicon`:
 
   **Type**: `string`
+
   **Default**: `""`
+
   **Equivalent**: `<link rel="icon" type="image/png" href="">`
 
 ##### Social
