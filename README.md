@@ -330,7 +330,7 @@ These are the data given by `config.json`:
 
 ##### Example
 
-Here's an example on how to fill your `config.json` file.
+Here's an example on how to fill your `config.json` file. Try it (:
 
 ```json
 {
