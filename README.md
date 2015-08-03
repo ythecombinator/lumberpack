@@ -328,6 +328,48 @@ These are the data given by `config.json`:
 
   **Equivalent**: `<meta itemprop="image" content="">`
 
+##### Example
+
+Here's an example on how to fill your `config.json` file.
+
+```json
+{
+   "about":{
+      "name": "Lumberpack",
+      "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+      "image": "",
+      "favicon": "img/favicon.png"
+   },
+   "social":{
+      "facebook":{
+        "admins":"",
+        "url": "https://github.com/mabrasil/lumberpack",
+        "type": "website",
+        "name": "Lumberpack",
+        "title": "Lumberpack",
+        "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+        "image": "img/logo.png"
+      },
+      "twitter":{
+         "card": "summary_large_image",
+         "site": "@mabrasil_io",
+         "title": "Lumberpack",
+         "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+         "image": "img/logo.png"
+      },
+      "plus":{
+         "name": "Lumberpack",
+         "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
+         "image": "img/logo.png"
+      }
+   }
+}
+```
+
+If everything happens okay, you must see something like this:
+
+![Screenshot](/screenshot.png)
+
 ## Contributing
 
 ### Versioning
