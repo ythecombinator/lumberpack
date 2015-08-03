@@ -141,9 +141,7 @@ to change some general data - like the site *name* or *descrption*. The `config.
    "about":{
       "name": "",
       "description": "",
-      "image": "",
-      "favicon": "",
-      "logo": ""
+      "favicon": ""
    },
    "social":{
       "facebook":{
