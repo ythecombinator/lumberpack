@@ -31,7 +31,7 @@ many other ones borrowed from languages like [Haskell](https://www.haskell.org/)
 
 ### Jade
 
-The  [Jade Engine](http://jade-lang.com/)  is one of the most powerful template engines we have nowadays and its use is intended to make the app templates' code more beautiful and **easier to maintain**. It also aims to solve some problems such as missing or mal-matched closing tags.
+The  [Jade Engine](http://jade-lang.com/)  is one of the most powerful templating engines we have nowadays and its use is intended to make the app templates' code more beautiful and **easier to maintain**. It also aims to solve some problems such as missing or mal-matched closing tags.
 
 ### Stylus
 
@@ -64,30 +64,30 @@ with one task per file. You can check out the [tasks directory](gulp/tasks) to s
 
 ### Getting Started
 
-Make sure you have the main dependencies to run this boilerplate:
+1. Make sure you have the main dependencies to run this boilerplate:
 
-- [NodeJS](http://nodejs.org/)
-- [GulpJS](http://gulpjs.com/)
-- [Livescript](http://livescript.net/)
+  - [NodeJS](http://nodejs.org/)
+  - [GulpJS](http://gulpjs.com/)
+  - [Livescript](http://livescript.net/)
 
-Clone this repository:
+2. Clone this repository:
 
-```sh
-$ git clone https://github.com/mabrasil/lumberpack.git my_project
-```
+  ```sh
+  $ git clone https://github.com/mabrasil/lumberpack.git my_project
+  ```
 
-Install all dependencies:
+3. Install all dependencies:
 
-```sh
-$ cd my_project
-$ npm install
-```
+  ```sh
+  $ cd my_project
+  $ npm install
+  ```
 
-Run the default gulp task:
+4. Run the default gulp task:
 
-```sh
-$ gulp
-```
+  ```sh
+  $ gulp
+  ```
 
 ### Next Steps
 
@@ -115,6 +115,50 @@ If everything from the [Getting Started](#getting-started) section goes well, yo
 |-- gulpfile.js
 |-- package.json
 ```
+
+Now let's find out what each one of those files and folders mean.
+
+P.S.: Some very commom files - or less important - are shown here, such as the `.md` ones - *README*, *LICENSE* *CONTRIBUTING* -, the CIs tracking files like `.codeclimate.yml` or `.travis.yml` and others.
+
+##### [`gulp/`](/gulp/)
+
+Contains the module with all the *gulp tasks*.
+
+##### [`src/images/`](/src/images/)
+
+Contains the the *images* that will be used in your project.
+
+##### [`src/scripts/`](/src/scripts/)
+
+Contains the *scripts* - written in *Livescript* - that will be used in your project.
+
+##### [`src/styles/`](/src/styles/)
+
+Contains the *styles* - written in *Stylus* - that will be used in your project.
+
+##### [`src/templates/`](/src/templates/)
+
+Contains the *tamplates* - written in *Jade* - that will be used in your project.
+
+##### [`src/config.json`](/src/config.json)
+
+Contains some of basic info from your site that will be rendered in the templates.
+
+##### [`www/`](/www/)
+
+This is where the generated files are stored, once the tasks are finished. However, this directory is unnecessary in versioning, so it's [ignored](.gitignore).
+
+##### [`.stylintrc`](.stylintrc)
+
+It defines some options available to stylint.
+
+##### [`gulpfile.js`](gulpfile.js)
+
+Calls the gulp tasks.
+
+##### [`package.json`](package.json)
+
+Contains many metadata relevant to the project.
 
 #### Understand the Gulp Tasks
 
