@@ -120,14 +120,16 @@ If everything from the [Getting Started](#getting-started) section goes well, yo
 
 All the Gulp tasks are in the [`tasks/`](gulp/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
 
-- `gulp`: Initialize watch for changes and a server
-- `gulp ls`: Compile Livescript files
-- `gulp jade`: Compile Jade files
-- `gulp stylus`: Compile Stylus files
-- `gulp imagemin`:Compress image files
-- `gulp watch`: Call to watch files
-- `gulp -p`: Minify all files for production
-- `gulp build -p`: Minify files and deploy via rsync
+|     Command     |                Description                |
+|-----------------|-------------------------------------------|
+| `gulp`          | Initialize watch for changes and a server |
+| `gulp ls`       | Compile Livescript files                  |
+| `gulp jade`     | Compile Jade files                        |
+| `gulp stylus`   | Compile Stylus files                      |
+| `gulp imagemin` | Compress image files                      |
+| `gulp watch`    | Call to watch files                       |
+| `gulp -p`       | Minify all files for production           |
+| `gulp build -p` | Minify files and deploy via rsync         |
 
 #### Setup the project's basic info
 
