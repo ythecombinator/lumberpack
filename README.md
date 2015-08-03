@@ -136,39 +136,189 @@ to change some general data - like the site *name* or *descrption*. The `config.
 
 ```json
 {
-  "name": "",
-  "description": "",
-  "image": "",
-  "favicon": "",
-  "url": "",
-  "facebookType": "",
-  "twitterType": ""
+   "about":{
+      "name": "",
+      "description": "",
+      "image": "",
+      "favicon": "",
+      "logo": ""
+   },
+   "social":{
+      "facebook":{
+        "admins":"",
+        "url": "",
+        "type": "",
+        "name": "",
+        "title": "",
+        "description": "",
+        "image": ""
+      },
+      "twitter":{
+         "card": "",
+         "site": "",
+         "title": "",
+         "description": "",
+         "image": ""
+      },
+      "plus":{
+         "name": "",
+         "description": "",
+         "image": ""
+      }
+   }
 }
+
 ```
 
 These are the data given by `config.json`:
 
-- `name`: Indicates the *name* that will be used in the following *metatags*: `title`, `og:title`, `og:site_name` and `twitter:title`.
-- `description`: Indicates the *description* that will be used in the following *metatags*: `description`, `og:description`, and `twitter:description`.
-- `image`: Indicates the **URL** of the *image* that will be used in the following *metatags*: `og:image` and `twitter:image:src`.
-- `favicon`: Indicates the **URL** of the *image* that will be used as your *favicon*.
-- `url`: Indicates the *url* that will be used in the following *metatags*: `og:url` and `twitter:url`.
-- `facebookType`: Indicates what will be used in the `og:type` *metatag*. You can check more info about it [here](http://ogp.me/#types).
-- `twitterType`: Indicates what will be used in the `twitter:card` *metatag*. You can check more info about it [here](https://dev.twitter.com/cards/types).
+##### About
 
-For example:
+- `name`:
 
-```json
-{
-  "name": "Lumberpack",
-  "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
-  "image": "img/logo.png",
-  "favicon": "img/favicon.png",
-  "url": "https://github.com/mabrasil/lumberpack",
-  "facebookType": "article",
-  "twitterType": "summary_large_image"
-}
-```
+  **Type**: `string`
+  **Default**: `""`
+  **Equivalent**: `<title></title>`
+
+- `description`:
+
+  **Type**: `string`
+  **Default**: `""`
+  **Equivalent**: `<meta name="description" content="">`
+
+- `favicon`:
+
+  **Type**: `string`
+  **Default**: `""`
+  **Equivalent**: `<link rel="icon" type="image/png" href="">`
+
+##### Social
+
+###### Facebook
+
+- `admins`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="fb:admins" content="">`
+
+- `url`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:url" content="">`
+
+- `type`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:type" content="">`
+
+- `name`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:site_name" content="">`
+
+- `title`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:title" content="">`
+
+- `description`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:description" content="">`
+
+- `image`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="og:image" content="">`
+
+###### Twitter
+
+- `card`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta name="twitter:card" content="">`
+
+- `site`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta name="twitter:site" content="">`
+
+- `title`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta name="twitter:title" content="">`
+
+- `description`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta name="twitter:description" content="">`
+
+- `image`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta property="twitter:image:src" content="">`
+
+###### Google Plus
+
+- `name`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta itemprop="name" content="">`
+
+- `description`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta itemprop="description" content="">`
+
+- `image`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta itemprop="image" content="">`
 
 ## Contributing
 
