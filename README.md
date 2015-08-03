@@ -144,7 +144,7 @@ Contains the *tamplates* - written in *Jade* - that will be used in your project
 
 Contains some of basic info from your site that will be rendered in the templates.
 
-##### [`www/`](/www/)
+##### www/
 
 This is where the generated files are stored, once the tasks are finished. However, this directory is unnecessary in versioning, so it's [ignored](.gitignore).
 
