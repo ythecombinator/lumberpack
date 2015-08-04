@@ -185,6 +185,7 @@ to change some general data - like the site *name* or *descrption*. The `config.
    "about":{
       "name": "",
       "description": "",
+      "color": "",
       "favicon": ""
    },
    "social":{
@@ -233,6 +234,14 @@ These are the data given by `config.json`:
   **Default**: `""`
 
   **Equivalent**: `<meta name="description" content="">`
+
+- `color`:
+
+  **Type**: `string` *(#HEX)*
+
+  **Default**: `""`
+
+  **Equivalent**: `<meta name="theme-color" content="">`
 
 - `favicon`:
 
@@ -379,7 +388,7 @@ Here's an example on how to fill your `config.json` file. Try it (:
    "about":{
       "name": "Lumberpack",
       "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
-      "image": "",
+      "color": "#c0392b",
       "favicon": "img/favicon.png"
    },
    "social":{
