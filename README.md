@@ -164,16 +164,17 @@ Contains many metadata relevant to the project.
 
 All the Gulp tasks are in the [`tasks/`](gulp/tasks) folder. Each one consists of a module with a function which is required into tasks defined in the [`gulpfile`](https://github.com/mabrasil/lumberpack/blob/master/gulpfile.js).
 
-|     Command     |                Description                |
-|-----------------|-------------------------------------------|
-| `gulp`          | Initialize watch for changes and a server |
-| `gulp ls`       | Compile Livescript files                  |
-| `gulp jade`     | Compile Jade files                        |
-| `gulp stylus`   | Compile Stylus files                      |
-| `gulp imagemin` | Compress image files                      |
-| `gulp watch`    | Call to watch files                       |
-| `gulp -p`       | Minify all files for production           |
-| `gulp build -p` | Minify files and deploy via rsync         |
+|     Command         |                Description                |
+|---------------------|-------------------------------------------|
+| `gulp`              | Initialize watch for changes and a server |
+| `gulp ls`           | Compile Livescript files                  |
+| `gulp jade`         | Compile Jade files                        |
+| `gulp stylus`       | Compile Stylus files                      |
+| `gulp imagemin`     | Compress image files                      |
+| `gulp watch`        | Call to watch files                       |
+| `gulp deploy-rsync` | Deploy via rsync                          |
+| `gulp -p`           | Minify all files for production           |
+| `gulp build -p`     | Minify files and deploy via rsync         |
 
 #### Setup the project's basic info
 
@@ -209,6 +210,13 @@ to change some general data - like the site *name* or *descrption*. The `config.
          "name": "",
          "description": "",
          "image": ""
+      }
+   },
+   "deploy":{
+      "rsync":{
+        "username":"",
+        "hostname": "",
+        "dest": ""
       }
    }
 }
@@ -379,6 +387,34 @@ These are the data given by `config.json`:
 
   **Equivalent**: `<meta itemprop="image" content="">`
 
+##### Deploy
+
+###### Rsync
+
+- `username`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Description**: Your username at the remote server.
+
+- `hostname`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Description**: Your server domain (URL).
+
+- `dest`:
+
+  **Type**: `string`
+
+  **Default**: `""`
+
+  **Description**: Path on the server that will receive the files.
+
 ##### Example
 
 Here's an example on how to fill your `config.json` file. Try it (:
@@ -412,6 +448,13 @@ Here's an example on how to fill your `config.json` file. Try it (:
          "name": "Lumberpack",
          "description": "Lumberpack is a simple boilerplate to easily bootstrap projects with a bunch of cool technologies.",
          "image": "img/logo.png"
+      }
+   },
+   "deploy":{
+      "rsync":{
+        "username":"mabrasil",
+        "hostname": "mabrasil.rocks",
+        "dest": "/path/to/www"
       }
    }
 }
