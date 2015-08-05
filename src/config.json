@@ -5,18 +5,6 @@
       "color": "",
       "favicon": ""
    },
-   "deploy":{
-      "rsync":{
-        "username":"",
-        "hostname": "",
-        "dest": ""
-      },
-      "s3":{
-        "username":"",
-        "hostname": "",
-        "dest": ""
-      }
-   },
    "social":{
       "facebook":{
         "admins":"",
@@ -38,6 +26,13 @@
          "name": "",
          "description": "",
          "image": ""
+      }
+   },
+   "deploy":{
+      "rsync":{
+        "username":"",
+        "hostname": "",
+        "dest": ""
       }
    }
 }
